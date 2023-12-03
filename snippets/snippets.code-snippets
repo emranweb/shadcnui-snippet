@@ -1,0 +1,44 @@
+{
+    "Shadcnui Snippet": {
+        "prefix": "sc-accordion",
+        "body": [
+            "<Accordion type=\"single\" collapsible>",
+            "  <AccordionItem value=\"item-1\">",
+            "    <AccordionTrigger>${1:Trigger Text}</AccordionTrigger>",
+            "    <AccordionContent>",
+            "      ${2:Content goes here}",
+            "    </AccordionContent>",
+            "  </AccordionItem>",
+            "</Accordion>"
+        ],
+        "description": "Shadcnui Accordion Snippet"
+    },
+
+    "Shadcnui Alert Snippet": {
+        "prefix": "sc-alert",
+        "body": [
+            "<Alert>",
+            "  <Terminal className=\"h-4 w-4\" />",
+            "  <AlertTitle>${1:Alert Title}</AlertTitle>",
+            "  <AlertDescription>",
+            "    ${2:Alert Description}",
+            "  </AlertDescription>",
+            "</Alert>"
+        ],
+        "description": "Shadcnui Alert Snippet"
+    },
+
+    "Shadcnui Destructive Alert Snippet": {
+        "prefix": "sc-alert-error",
+        "body": [
+            "<Alert variant=\"destructive\">",
+            "  <AlertCircle className=\"h-4 w-4\" />",
+            "  <AlertTitle>${1:Error}</AlertTitle>",
+            "  <AlertDescription>",
+            "    ${2:Your session has expired. Please log in again.}",
+            "  </AlertDescription>",
+            "</Alert>"
+        ],
+        "description": "Shadcnui Destructive Alert Snippet"
+    }
+}
