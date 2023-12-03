@@ -2,6 +2,10 @@
 
 A Visual Studio Code extension for Shadcnui UI components snippets. Quickly insert reusable code snippets for Shadcnui components, enhancing your development workflow with ease.
 
+## Features
+
+This extension contains code snippets for Shadcnui for React. It is based on the [Shadcnui](https://shadcnui.com/) documentation. This Snippets only provide the Body of the component. You can add the props according to your need. Also Need to import the component from Shadcnui.
+
 ## Snippets
 
 -   `sc-accordion` - Shadcnui Container component
@@ -15,6 +19,13 @@ A Visual Studio Code extension for Shadcnui UI components snippets. Quickly inse
 -   `sc-calendar` - Shadcnui Calendar
 -   `sc-card` - Shadcnui Card
 -   `sc-checkbox` - Shadcnui Checkbox
+-   `sc-collapsible` - Shadcnui Collapsible
+-   `sc-context-menu` - Shadcnui Context Menu
+-   `sc-datepicker` - Shadcnui Date Picker
+-   `sc-input` - Shadcnui Input
+-   `sc-menubar` - Shadcnui Menubar
+-   `sc-navigation-menu` - Shadcnui Navigation Menu
+-   `sc-progress` - Shadcnui Progress
 
 ## Installation
 
@@ -35,5 +46,9 @@ A Visual Studio Code extension for Shadcnui UI components snippets. Quickly inse
 -   TypeScript (.ts)
 -   JavaScript React (.jsx)
 -   TypeScript React (.tsx)
+
+## Supported Shadcnui
+
+If you find any missing components, please [open an issue](https://github.com/emranweb/shadcnui-snippet.git) or [submit a pull request](https://github.com/emranweb/shadcnui-snippet.git).
 
 # Enjoy!
