@@ -7,6 +7,14 @@ A Visual Studio Code extension for Shadcnui UI components snippets. Quickly inse
 -   `sc-accordion` - Shadcnui Container component
 -   `sc-alert` - Shadcnui Alert
 -   `sc-alert-error` - Shadcnui Alert Error
+-   `sc-alert-dialog` - Shadcnui Alert Dialog
+-   `sc-aspect-ratio` - Shadcnui Aspect Ratio
+-   `sc-avatar` - Shadcnui Avatar
+-   `sc-badge` - Shadcnui Badge
+-   `sc-button` - Shadcnui Button
+-   `sc-calendar` - Shadcnui Calendar
+-   `sc-card` - Shadcnui Card
+-   `sc-checkbox` - Shadcnui Checkbox
 
 ## Installation
 
@@ -17,8 +25,8 @@ A Visual Studio Code extension for Shadcnui UI components snippets. Quickly inse
 
 ## Usage
 
-1. Open a file with a supported language (e.g., JSX, XML).
-2. Type the prefix for a Shadcnui component snippet (e.g., `shadcnui-alert`).
+1. Open a file with a supported language (e.g., JSX, JS, TS,TSX).
+2. Type the prefix for a Shadcnui component snippet (e.g., `sc-button`).
 3. Press `Tab` to expand the snippet, and fill in the placeholders for customizable parts.
 
 ## Supported Languages
@@ -28,4 +36,4 @@ A Visual Studio Code extension for Shadcnui UI components snippets. Quickly inse
 -   JavaScript React (.jsx)
 -   TypeScript React (.tsx)
 
-Enjoy!
+# Enjoy!

@@ -40,5 +40,125 @@
             "</Alert>"
         ],
         "description": "Shadcnui Destructive Alert Snippet"
+    },
+    "Shadcnui AlertDialog Snippet": {
+        "prefix": "sc-alert-dialog",
+        "body": [
+            "<AlertDialog>",
+            "  <AlertDialogTrigger>${1:Open}</AlertDialogTrigger>",
+            "  <AlertDialogContent>",
+            "    <AlertDialogHeader>",
+            "      <AlertDialogTitle>${2:Are you absolutely sure?}</AlertDialogTitle>",
+            "      <AlertDialogDescription>",
+            "        ${3:This action cannot be undone. This will permanently delete your account",
+            "        and remove your data from our servers.}",
+            "      </AlertDialogDescription>",
+            "    </AlertDialogHeader>",
+            "    <AlertDialogFooter>",
+            "      <AlertDialogCancel>${4:Cancel}</AlertDialogCancel>",
+            "      <AlertDialogAction>${5:Continue}</AlertDialogAction>",
+            "    </AlertDialogFooter>",
+            "  </AlertDialogContent>",
+            "</AlertDialog>"
+        ],
+        "description": "Shadcnui AlertDialog Snippet - Creates a Shadcnui AlertDialog with customizable content."
+    },
+    // Aspect Ratio
+    "Shadcnui Image AspectRatio Snippet": {
+        "prefix": "sc-aspect-ratio",
+        "body": [
+            "<div className=\"w-[450px]\">",
+            "  <AspectRatio ratio={16 / 9}>",
+            "    <Image src=\"${1:...}\" alt=\"${2:Image}\" className=\"rounded-md object-cover\" />",
+            "  </AspectRatio>",
+            "</div>"
+        ],
+        "description": "Shadcnui Image AspectRatio Snippet - Creates an image container with Shadcnui AspectRatio."
+    },
+    // Avatar
+    "Shadcnui Avatar Snippet": {
+        "prefix": "sc-avatar",
+        "body": [
+            "<Avatar>",
+            "  <AvatarImage src=\"${1:https://github.com/shadcn.png}\" />",
+            "  <AvatarFallback>${2:CN}</AvatarFallback>",
+            "</Avatar>"
+        ],
+        "description": "Shadcnui Avatar Snippet - Creates a Shadcnui Avatar with customizable image source and fallback content."
+    },
+    // Badge
+    "Shadcnui Badge Snippet": {
+        "prefix": "sc-badge",
+        "body": ["<Badge>${1:Badge Text}</Badge>"],
+        "description": "Shadcnui Badge Snippet - Creates a Shadcnui Badge with customizable text."
+    },
+    // Buttons
+    "Shadcnui Button Snippet": {
+        "prefix": "sc-button",
+        "body": ["<Button>Button Text</Button>"],
+        "description": "Shadcnui Button Snippet - Creates a Shadcnui button with customizable text."
+    },
+    "Shadcnui Secondary Button Snippet": {
+        "prefix": "sc-button-secondary",
+        "body": ["<Button variant='secondary'>Secondary</Button>"],
+        "description": "Shadcnui Secondary Button Snippet - Creates a Shadcnui button with a secondary variant."
+    },
+    "Shadcnui Destructive Button Snippet": {
+        "prefix": "sc-button-destructive",
+        "body": ["<Button variant=\"destructive\">${1:Destructive}</Button>"],
+        "description": "Shadcnui Destructive Button Snippet - Creates a Shadcnui button with a destructive variant."
+    },
+    "Shadcnui Outline Button Snippet": {
+        "prefix": "sc-button-outline",
+        "body": ["<Button variant=\"outline\">${1:Outline}</Button>"],
+        "description": "Shadcnui Outline Button Snippet - Creates a Shadcnui button with an outline variant."
+    },
+    // Calendar
+    "Shadcnui Calendar Snippet": {
+        "prefix": "sc-calendar",
+        "body": [
+            "<Calendar",
+            "    mode=\"single\"",
+            "    selected={${1:date}}",
+            "    onSelect={${2:setDate}}",
+            "    className=\"${3:rounded-md border}\"",
+            "/>"
+        ],
+        "description": "Shadcnui Calendar Snippet - Creates a Shadcnui Calendar component with customizable properties."
+    },
+    // Card
+    "Shadcnui Card Snippet": {
+        "prefix": "sc-card",
+        "body": [
+            "<Card>",
+            "  <CardHeader>",
+            "    <CardTitle>${1:Card Title}</CardTitle>",
+            "    <CardDescription>${2:Card Description}</CardDescription>",
+            "  </CardHeader>",
+            "  <CardContent>",
+            "    <p>${3:Card Content}</p>",
+            "  </CardContent>",
+            "  <CardFooter>",
+            "    <p>${4:Card Footer}</p>",
+            "  </CardFooter>",
+            "</Card>"
+        ],
+        "description": "Shadcnui Card Snippet - Creates a Shadcnui Card with customizable title, description, content, and footer."
+    },
+    // Checkbox
+    "Shadcnui Checkbox Snippet": {
+        "prefix": "sc-checkbox",
+        "body": [
+            "<div className=\"flex items-center space-x-2\">",
+            "  <Checkbox id=\"${1:terms}\" />",
+            "  <label",
+            "    htmlFor=\"${1:terms}\"",
+            "    className=\"text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70\"",
+            "  >",
+            "    ${2:Accept terms and conditions}",
+            "  </label>",
+            "</div>"
+        ],
+        "description": "Shadcnui Checkbox Snippet - Creates a Shadcnui checkbox with a customizable ID and label."
     }
 }

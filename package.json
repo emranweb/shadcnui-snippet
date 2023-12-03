@@ -2,7 +2,7 @@
     "name": "shadcnui-snippet",
     "displayName": "shadcnui-snippet",
     "description": "A Visual Studio Code extension for Shadcnui UI components snippets. Quickly insert reusable code snippets for Shadcnui components, enhancing your development workflow with ease.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.84.0"
     },
