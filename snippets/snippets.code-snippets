@@ -40,5 +40,369 @@
             "</Alert>"
         ],
         "description": "Shadcnui Destructive Alert Snippet"
+    },
+    "Shadcnui AlertDialog Snippet": {
+        "prefix": "sc-alert-dialog",
+        "body": [
+            "<AlertDialog>",
+            "  <AlertDialogTrigger>${1:Open}</AlertDialogTrigger>",
+            "  <AlertDialogContent>",
+            "    <AlertDialogHeader>",
+            "      <AlertDialogTitle>${2:Are you absolutely sure?}</AlertDialogTitle>",
+            "      <AlertDialogDescription>",
+            "        ${3:This action cannot be undone. This will permanently delete your account",
+            "        and remove your data from our servers.}",
+            "      </AlertDialogDescription>",
+            "    </AlertDialogHeader>",
+            "    <AlertDialogFooter>",
+            "      <AlertDialogCancel>${4:Cancel}</AlertDialogCancel>",
+            "      <AlertDialogAction>${5:Continue}</AlertDialogAction>",
+            "    </AlertDialogFooter>",
+            "  </AlertDialogContent>",
+            "</AlertDialog>"
+        ],
+        "description": "Shadcnui AlertDialog Snippet - Creates a Shadcnui AlertDialog with customizable content."
+    },
+    // Aspect Ratio
+    "Shadcnui Image AspectRatio Snippet": {
+        "prefix": "sc-aspect-ratio",
+        "body": [
+            "<div className=\"w-[450px]\">",
+            "  <AspectRatio ratio={16 / 9}>",
+            "    <Image src=\"${1:...}\" alt=\"${2:Image}\" className=\"rounded-md object-cover\" />",
+            "  </AspectRatio>",
+            "</div>"
+        ],
+        "description": "Shadcnui Image AspectRatio Snippet - Creates an image container with Shadcnui AspectRatio."
+    },
+    // Avatar
+    "Shadcnui Avatar Snippet": {
+        "prefix": "sc-avatar",
+        "body": [
+            "<Avatar>",
+            "  <AvatarImage src=\"${1:https://github.com/shadcn.png}\" />",
+            "  <AvatarFallback>${2:CN}</AvatarFallback>",
+            "</Avatar>"
+        ],
+        "description": "Shadcnui Avatar Snippet - Creates a Shadcnui Avatar with customizable image source and fallback content."
+    },
+    // Badge
+    "Shadcnui Badge Snippet": {
+        "prefix": "sc-badge",
+        "body": ["<Badge>${1:Badge Text}</Badge>"],
+        "description": "Shadcnui Badge Snippet - Creates a Shadcnui Badge with customizable text."
+    },
+    // Buttons
+    "Shadcnui Button Snippet": {
+        "prefix": "sc-button",
+        "body": ["<Button>Button Text</Button>"],
+        "description": "Shadcnui Button Snippet - Creates a Shadcnui button with customizable text."
+    },
+    "Shadcnui Secondary Button Snippet": {
+        "prefix": "sc-button-secondary",
+        "body": ["<Button variant='secondary'>Secondary</Button>"],
+        "description": "Shadcnui Secondary Button Snippet - Creates a Shadcnui button with a secondary variant."
+    },
+    "Shadcnui Destructive Button Snippet": {
+        "prefix": "sc-button-destructive",
+        "body": ["<Button variant=\"destructive\">${1:Destructive}</Button>"],
+        "description": "Shadcnui Destructive Button Snippet - Creates a Shadcnui button with a destructive variant."
+    },
+    "Shadcnui Outline Button Snippet": {
+        "prefix": "sc-button-outline",
+        "body": ["<Button variant=\"outline\">${1:Outline}</Button>"],
+        "description": "Shadcnui Outline Button Snippet - Creates a Shadcnui button with an outline variant."
+    },
+    // Calendar
+    "Shadcnui Calendar Snippet": {
+        "prefix": "sc-calendar",
+        "body": [
+            "<Calendar",
+            "    mode=\"single\"",
+            "    selected={${1:date}}",
+            "    onSelect={${2:setDate}}",
+            "    className=\"${3:rounded-md border}\"",
+            "/>"
+        ],
+        "description": "Shadcnui Calendar Snippet - Creates a Shadcnui Calendar component with customizable properties."
+    },
+    // Card
+    "Shadcnui Card Snippet": {
+        "prefix": "sc-card",
+        "body": [
+            "<Card>",
+            "  <CardHeader>",
+            "    <CardTitle>${1:Card Title}</CardTitle>",
+            "    <CardDescription>${2:Card Description}</CardDescription>",
+            "  </CardHeader>",
+            "  <CardContent>",
+            "    <p>${3:Card Content}</p>",
+            "  </CardContent>",
+            "  <CardFooter>",
+            "    <p>${4:Card Footer}</p>",
+            "  </CardFooter>",
+            "</Card>"
+        ],
+        "description": "Shadcnui Card Snippet - Creates a Shadcnui Card with customizable title, description, content, and footer."
+    },
+    // Checkbox
+    "Shadcnui Checkbox Snippet": {
+        "prefix": "sc-checkbox",
+        "body": [
+            "<div className=\"flex items-center space-x-2\">",
+            "  <Checkbox id=\"${1:terms}\" />",
+            "  <label",
+            "    htmlFor=\"${1:terms}\"",
+            "    className=\"text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70\"",
+            "  >",
+            "    ${2:Accept terms and conditions}",
+            "  </label>",
+            "</div>"
+        ],
+        "description": "Shadcnui Checkbox Snippet - Creates a Shadcnui checkbox with a customizable ID and label."
+    },
+    // Collapsible
+    "Shadcnui Collapsible Snippet": {
+        "prefix": "sc-collapsible",
+        "body": [
+            "<Collapsible>",
+            "  <CollapsibleTrigger>${1:Can I use this in my project?}</CollapsibleTrigger>",
+            "  <CollapsibleContent>",
+            "    ${2:Yes. Free to use for personal and commercial projects. No attribution required.}",
+            "  </CollapsibleContent>",
+            "</Collapsible>"
+        ],
+        "description": "Shadcnui Collapsible Snippet - Creates a Shadcnui Collapsible with customizable trigger and content."
+    },
+    // Context Menu
+    "Shadcnui ContextMenu Snippet": {
+        "prefix": "sc-context-menu",
+        "body": [
+            "<ContextMenu>",
+            "  <ContextMenuTrigger>${1:Right click}</ContextMenuTrigger>",
+            "  <ContextMenuContent>",
+            "    <ContextMenuItem>${2:Profile}</ContextMenuItem>",
+            "    <ContextMenuItem>${3:Billing}</ContextMenuItem>",
+            "    <ContextMenuItem>${4:Team}</ContextMenuItem>",
+            "    <ContextMenuItem>${5:Subscription}</ContextMenuItem>",
+            "  </ContextMenuContent>",
+            "</ContextMenu>"
+        ],
+        "description": "Shadcnui ContextMenu Snippet - Creates a Shadcnui ContextMenu with customizable trigger and items."
+    },
+    // Datepicker
+    "Shadcnui Popover Snippet": {
+        "prefix": "sc-datepicker",
+        "body": [
+            "<Popover>",
+            "  <PopoverTrigger asChild>",
+            "    <Button",
+            "      variant={\"outline\"}",
+            "      className={cn(",
+            "        \"w-[280px] justify-start text-left font-normal\",",
+            "        !date && \"text-muted-foreground\"",
+            "      )}",
+            "    >",
+            "      <CalendarIcon className=\"mr-2 h-4 w-4\" />",
+            "      {date ? format(date, \"PPP\") : <span>Pick a date</span>}",
+            "    </Button>",
+            "  </PopoverTrigger>",
+            "  <PopoverContent className=\"w-auto p-0\">",
+            "    <Calendar",
+            "      mode=\"single\"",
+            "      selected={date}",
+            "      onSelect={setDate}",
+            "      initialFocus",
+            "    />",
+            "  </PopoverContent>",
+            "</Popover>"
+        ],
+        "description": "Shadcnui Popover Snippet - Creates a Shadcnui Popover with a trigger button and a Calendar inside."
+    },
+    // Input
+    "Shadcnui Email Input Snippet": {
+        "prefix": "sc-input",
+        "body": ["<Input type=\"text\" placeholder=\"Text\" />"],
+        "description": "Shadcnui Email Input Snippet"
+    },
+    // Menubar
+    "Shadcnui Menubar Snippet": {
+        "prefix": "sc-menubar",
+        "body": [
+            "<Menubar>",
+            "  <MenubarMenu>",
+            "    <MenubarTrigger>${1:File}</MenubarTrigger>",
+            "    <MenubarContent>",
+            "      <MenubarItem>",
+            "        ${2:New Tab} <MenubarShortcut>${3:⌘T}</MenubarShortcut>",
+            "      </MenubarItem>",
+            "      <MenubarItem>${4:New Window}</MenubarItem>",
+            "      <MenubarSeparator />",
+            "      <MenubarItem>${5:Share}</MenubarItem>",
+            "      <MenubarSeparator />",
+            "      <MenubarItem>${6:Print}</MenubarItem>",
+            "    </MenubarContent>",
+            "  </MenubarMenu>",
+            "</Menubar>"
+        ],
+        "description": "Shadcnui Menubar Snippet - Creates a Shadcnui Menubar with customizable menu items and shortcuts."
+    },
+    // Navigation Menu
+    "Shadcnui NavigationMenu Snippet": {
+        "prefix": "sc-navigation-menu",
+        "body": [
+            "<NavigationMenu>",
+            "  <NavigationMenuList>",
+            "    <NavigationMenuItem>",
+            "      <NavigationMenuTrigger>${1:Item One}</NavigationMenuTrigger>",
+            "      <NavigationMenuContent>",
+            "        <NavigationMenuLink>${2:Link}</NavigationMenuLink>",
+            "      </NavigationMenuContent>",
+            "    </NavigationMenuItem>",
+            "  </NavigationMenuList>",
+            "</NavigationMenu>"
+        ],
+        "description": "Shadcnui NavigationMenu Snippet - Creates a Shadcnui NavigationMenu with customizable menu items, triggers, and links."
+    },
+    // Progress Bar
+    "Shadcnui Progress Snippet": {
+        "prefix": "sc-progress",
+        "body": ["<Progress value={${1:33}} />"],
+        "description": "Shadcnui Progress Snippet - Creates a Shadcnui Progress component with a customizable value."
+    },
+    "Shadcnui Tooltip Snippet": {
+        "prefix": "sc-tooltip",
+        "body": [
+            "  <TooltipProvider>",
+            "    <Tooltip>",
+            "      <TooltipTrigger>Hover</TooltipTrigger>",
+            "      <TooltipContent>",
+            "        <p>${1}</p>",
+            "      </TooltipContent>",
+            "    </Tooltip>",
+            "  </TooltipProvider>"
+        ],
+        "description": "Shadcn UI Tooltip"
+    },
+    "Shadcnui Toogle Group": {
+        "prefix": "sc-toggle-group",
+        "body": [
+            "<ToggleGroup type=\"multiple\">",
+            "  <ToggleGroupItem value=\"a\">A</ToggleGroupItem>",
+            "  <ToggleGroupItem value=\"b\">B</ToggleGroupItem>",
+            "  <ToggleGroupItem value=\"c\">C</ToggleGroupItem>",
+            "</ToggleGroup>"
+        ],
+        "description": "Shadcn UI Toggle Group Multiple Choice"
+    },
+    "Shadcnui Toggle": {
+        "prefix": "sc-toggle",
+        "body": ["<Toggle>Toggle</Toggle>"],
+        "description": "Shadcn UI Toggle"
+    },
+    "Shadcnui Toast": {
+        "prefix": "sc-toast",
+        "body": [
+            "<Button      variant=\"outline\"      onClick={() => {        toast({          description: \"Your message has been sent.\",        })      }}    >      Show Toast    </Button>"
+        ],
+        "description": "Shadcn UI Button with Toast"
+    },
+    "Shadcnui Textarea": {
+        "prefix": "sc-textarea",
+        "body": ["<Textarea placeholder=\"Type your message here.\" />"],
+        "description": "Shadcn UI Textarea"
+    },
+    "Shadcn Tabs": {
+        "prefix": "sc-tabs",
+        "body": [
+            "<Tabs defaultValue=\"account\" className=\"w-[400px]\">",
+            "    <TabsList className=\"grid w-full grid-cols-2\">",
+            "        <TabsTrigger value=\"account\">Account</TabsTrigger>",
+            "        <TabsTrigger value=\"password\">Password</TabsTrigger>",
+            "    </TabsList>",
+            "    <TabsContent value=\"account\">",
+            "        <Card>",
+            "          <CardHeader>",
+            "            <CardTitle>Account</CardTitle>",
+            "            <CardDescription>",
+            "              Make changes to your account here. Click save when you're done.",
+            "            </CardDescription>",
+            "          </CardHeader>",
+            "          <CardContent className=\"space-y-2\">",
+            "            <div className=\"space-y-1\">",
+            "              <Label htmlFor=\"name\">Name</Label>",
+            "              <Input id=\"name\" defaultValue=\"Pedro Duarte\" />",
+            "            </div>",
+            "            <div className=\"space-y-1\">",
+            "              <Label htmlFor=\"username\">Username</Label>",
+            "              <Input id=\"username\" defaultValue=\"@peduarte\" />",
+            "            </div>",
+            "          </CardContent>",
+            "          <CardFooter>",
+            "            <Button>Save changes</Button>",
+            "          </CardFooter>",
+            "        </Card>",
+            "    </TabsContent>",
+            "    <TabsContent value=\"password\">",
+            "        <Card>",
+            "          <CardHeader>",
+            "            <CardTitle>Password</CardTitle>",
+            "            <CardDescription>",
+            "              Change your password here. After saving, you'll be logged out.",
+            "            </CardDescription>",
+            "          </CardHeader>",
+            "          <CardContent className=\"space-y-2\">",
+            "            <div className=\"space-y-1\">",
+            "              <Label htmlFor=\"current\">Current password</Label>",
+            "              <Input id=\"current\" type=\"password\" />",
+            "            </div>",
+            "            <div className=\"space-y-1\">",
+            "              <Label htmlFor=\"new\">New password</Label>",
+            "              <Input id=\"new\" type=\"password\" />",
+            "            </div>",
+            "          </CardContent>",
+            "          <CardFooter>",
+            "            <Button>Save password</Button>",
+            "          </CardFooter>",
+            "        </Card>",
+            "    </TabsContent>",
+            "</Tabs>"
+        ],
+        "description": "Shadcn UI Tabs with pre-configured Account & Password views"
+    },
+    "Shadcnui Table": {
+        "prefix": "sc-table",
+        "body": [
+            "<Table>",
+            "  <TableCaption>A list of your recent invoices.</TableCaption>",
+            "  <TableHeader>",
+            "    <TableRow>",
+            "      <TableHead className=\"w-[100px]\">Invoice</TableHead>",
+            "      <TableHead>Status</TableHead>",
+            "      <TableHead>Method</TableHead>",
+            "      <TableHead className=\"text-right\">Amount</TableHead>",
+            "    </TableRow>",
+            "  </TableHeader>",
+            "  <TableBody>",
+            "    <TableRow>",
+            "      <TableCell className=\"font-medium\">INV001</TableCell>",
+            "      <TableCell>Paid</TableCell>",
+            "      <TableCell>Credit Card</TableCell>",
+            "      <TableCell className=\"text-right\">$250.00</TableCell>",
+            "    </TableRow>",
+            "  </TableBody>",
+            "</Table>"
+        ],
+        "description": "Shadcn UI Table with caption, header, and body"
+    },
+    "Shadcnui Switch": {
+        "prefix": "sc-switch",
+        "body": [
+            "<div className=\"flex items-center space-x-2\">",
+            "  <Switch id=\"airplane-mode\" />",
+            "  <Label htmlFor=\"airplane-mode\">Airplane Mode</Label>",
+            "</div>"
+        ],
+        "description": "Shadcn UI Switch with Label"
     }
 }
