@@ -269,5 +269,140 @@
         "prefix": "sc-progress",
         "body": ["<Progress value={${1:33}} />"],
         "description": "Shadcnui Progress Snippet - Creates a Shadcnui Progress component with a customizable value."
+    },
+    "Shadcnui Tooltip Snippet": {
+        "prefix": "sc-tooltip",
+        "body": [
+            "  <TooltipProvider>",
+            "    <Tooltip>",
+            "      <TooltipTrigger>Hover</TooltipTrigger>",
+            "      <TooltipContent>",
+            "        <p>${1}</p>",
+            "      </TooltipContent>",
+            "    </Tooltip>",
+            "  </TooltipProvider>"
+        ],
+        "description": "Shadcn UI Tooltip"
+    },
+    "Shadcnui Toogle Group": {
+        "prefix": "sc-toggle-group",
+        "body": [
+            "<ToggleGroup type=\"multiple\">",
+            "  <ToggleGroupItem value=\"a\">A</ToggleGroupItem>",
+            "  <ToggleGroupItem value=\"b\">B</ToggleGroupItem>",
+            "  <ToggleGroupItem value=\"c\">C</ToggleGroupItem>",
+            "</ToggleGroup>"
+        ],
+        "description": "Shadcn UI Toggle Group Multiple Choice"
+    },
+    "Shadcnui Toggle": {
+        "prefix": "sc-toggle",
+        "body": ["<Toggle>Toggle</Toggle>"],
+        "description": "Shadcn UI Toggle"
+    },
+    "Shadcnui Toast": {
+        "prefix": "sc-toast",
+        "body": [
+            "<Button      variant=\"outline\"      onClick={() => {        toast({          description: \"Your message has been sent.\",        })      }}    >      Show Toast    </Button>"
+        ],
+        "description": "Shadcn UI Button with Toast"
+    },
+    "Shadcnui Textarea": {
+        "prefix": "sc-textarea",
+        "body": ["<Textarea placeholder=\"Type your message here.\" />"],
+        "description": "Shadcn UI Textarea"
+    },
+    "Shadcn Tabs": {
+        "prefix": "sc-tabs",
+        "body": [
+            "<Tabs defaultValue=\"account\" className=\"w-[400px]\">",
+            "    <TabsList className=\"grid w-full grid-cols-2\">",
+            "        <TabsTrigger value=\"account\">Account</TabsTrigger>",
+            "        <TabsTrigger value=\"password\">Password</TabsTrigger>",
+            "    </TabsList>",
+            "    <TabsContent value=\"account\">",
+            "        <Card>",
+            "          <CardHeader>",
+            "            <CardTitle>Account</CardTitle>",
+            "            <CardDescription>",
+            "              Make changes to your account here. Click save when you're done.",
+            "            </CardDescription>",
+            "          </CardHeader>",
+            "          <CardContent className=\"space-y-2\">",
+            "            <div className=\"space-y-1\">",
+            "              <Label htmlFor=\"name\">Name</Label>",
+            "              <Input id=\"name\" defaultValue=\"Pedro Duarte\" />",
+            "            </div>",
+            "            <div className=\"space-y-1\">",
+            "              <Label htmlFor=\"username\">Username</Label>",
+            "              <Input id=\"username\" defaultValue=\"@peduarte\" />",
+            "            </div>",
+            "          </CardContent>",
+            "          <CardFooter>",
+            "            <Button>Save changes</Button>",
+            "          </CardFooter>",
+            "        </Card>",
+            "    </TabsContent>",
+            "    <TabsContent value=\"password\">",
+            "        <Card>",
+            "          <CardHeader>",
+            "            <CardTitle>Password</CardTitle>",
+            "            <CardDescription>",
+            "              Change your password here. After saving, you'll be logged out.",
+            "            </CardDescription>",
+            "          </CardHeader>",
+            "          <CardContent className=\"space-y-2\">",
+            "            <div className=\"space-y-1\">",
+            "              <Label htmlFor=\"current\">Current password</Label>",
+            "              <Input id=\"current\" type=\"password\" />",
+            "            </div>",
+            "            <div className=\"space-y-1\">",
+            "              <Label htmlFor=\"new\">New password</Label>",
+            "              <Input id=\"new\" type=\"password\" />",
+            "            </div>",
+            "          </CardContent>",
+            "          <CardFooter>",
+            "            <Button>Save password</Button>",
+            "          </CardFooter>",
+            "        </Card>",
+            "    </TabsContent>",
+            "</Tabs>"
+        ],
+        "description": "Shadcn UI Tabs with pre-configured Account & Password views"
+    },
+    "Shadcnui Table": {
+        "prefix": "sc-table",
+        "body": [
+            "<Table>",
+            "  <TableCaption>A list of your recent invoices.</TableCaption>",
+            "  <TableHeader>",
+            "    <TableRow>",
+            "      <TableHead className=\"w-[100px]\">Invoice</TableHead>",
+            "      <TableHead>Status</TableHead>",
+            "      <TableHead>Method</TableHead>",
+            "      <TableHead className=\"text-right\">Amount</TableHead>",
+            "    </TableRow>",
+            "  </TableHeader>",
+            "  <TableBody>",
+            "    <TableRow>",
+            "      <TableCell className=\"font-medium\">INV001</TableCell>",
+            "      <TableCell>Paid</TableCell>",
+            "      <TableCell>Credit Card</TableCell>",
+            "      <TableCell className=\"text-right\">$250.00</TableCell>",
+            "    </TableRow>",
+            "  </TableBody>",
+            "</Table>"
+        ],
+        "description": "Shadcn UI Table with caption, header, and body"
+    },
+    "Shadcnui Switch": {
+        "prefix": "sc-switch",
+        "body": [
+            "<div className=\"flex items-center space-x-2\">",
+            "  <Switch id=\"airplane-mode\" />",
+            "  <Label htmlFor=\"airplane-mode\">Airplane Mode</Label>",
+            "</div>"
+        ],
+        "description": "Shadcn UI Switch with Label"
     }
 }

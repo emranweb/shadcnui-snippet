@@ -8,24 +8,32 @@ This extension contains code snippets for Shadcnui for React. It is based on the
 
 ## Snippets
 
--   `sc-accordion` - Shadcnui Container component
--   `sc-alert` - Shadcnui Alert
--   `sc-alert-error` - Shadcnui Alert Error
--   `sc-alert-dialog` - Shadcnui Alert Dialog
--   `sc-aspect-ratio` - Shadcnui Aspect Ratio
--   `sc-avatar` - Shadcnui Avatar
--   `sc-badge` - Shadcnui Badge
--   `sc-button` - Shadcnui Button
--   `sc-calendar` - Shadcnui Calendar
--   `sc-card` - Shadcnui Card
--   `sc-checkbox` - Shadcnui Checkbox
--   `sc-collapsible` - Shadcnui Collapsible
--   `sc-context-menu` - Shadcnui Context Menu
--   `sc-datepicker` - Shadcnui Date Picker
--   `sc-input` - Shadcnui Input
--   `sc-menubar` - Shadcnui Menubar
--   `sc-navigation-menu` - Shadcnui Navigation Menu
--   `sc-progress` - Shadcnui Progress
+-   `sc-accordion` - Shadcnui Container component | [Docs](https://shadcnui.com/components/accordion)
+-   `sc-alert` - Shadcnui Alert component | [Docs](https://shadcnui.com/components/alert)
+-   `sc-alert-error` - Shadcnui Alert Error component | [Docs](https://shadcnui.com/components/alert-error)
+-   `sc-alert-dialog` - Shadcnui Alert Dialog component | [Docs](https://shadcnui.com/components/alert-dialog)
+-   `sc-aspect-ratio` - Shadcnui Aspect Ratio component | [Docs](https://shadcnui.com/components/aspect-ratio)
+-   `sc-avatar` - Shadcnui Avatar component | [Docs](https://shadcnui.com/components/avatar)
+-   `sc-badge` - Shadcnui Badge component | [Docs](https://shadcnui.com/components/badge)
+-   `sc-button` - Shadcnui Button component | [Docs](https://shadcnui.com/components/button)
+-   `sc-calendar` - Shadcnui Calendar component | [Docs](https://shadcnui.com/components/calendar)
+-   `sc-card` - Shadcnui Card component | [Docs](https://shadcnui.com/components/card)
+-   `sc-checkbox` - Shadcnui Checkbox component | [Docs](https://shadcnui.com/components/checkbox)
+-   `sc-collapsible` - Shadcnui Collapsible component | [Docs](https://shadcnui.com/components/collapsible)
+-   `sc-context-menu` - Shadcnui Context Menu component | [Docs](https://shadcnui.com/components/context-menu)
+-   `sc-datepicker` - Shadcnui Date Picker component | [Docs](https://shadcnui.com/components/datepicker)
+-   `sc-input` - Shadcnui Input component | [Docs](https://shadcnui.com/components/input)
+-   `sc-menubar` - Shadcnui Menubar component | [Docs](https://shadcnui.com/components/menubar)
+-   `sc-navigation-menu` - Shadcnui Navigation Menu component | [Docs](https://shadcnui.com/components/navigation-menu)
+-   `sc-progress` - Shadcnui Progress component | [Docs](https://shadcnui.com/components/progress)
+-   `sc-tooltip` - Shadcnui Tooltip component | [Docs](https://shadcnui.com/components/tooltip)
+-   `sc-toggle` - Shadcnui Toggle component | [Docs](https://shadcnui.com/components/toggle)
+-   `sc-toggle-group` - Shadcnui Toggle Group component | [Docs](https://shadcnui.com/components/toggle-group)
+-   `sc-toast` - Shadcnui Toast component | [Docs](https://shadcnui.com/components/toast)
+-   `sc-tabs` - Shadcnui Tabs component | [Docs](https://shadcnui.com/components/tabs)
+-   `sc-table` - Shadcnui Table component | [Docs](https://shadcnui.com/components/table)
+-   `sc-textarea` - Shadcnui Textarea component | [Docs](https://shadcnui.com/components/textarea)
+-   `sc-switch` - Shadcnui Switch component | [Docs](https://shadcnui.com/components/switch)
 
 ## Installation
 
