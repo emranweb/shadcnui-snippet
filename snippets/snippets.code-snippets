@@ -63,7 +63,7 @@
         ],
         "description": "Shadcnui AlertDialog Snippet - Creates a Shadcnui AlertDialog with customizable content."
     },
-    // Aspect Ratio
+
     "Shadcnui Image AspectRatio Snippet": {
         "prefix": "sc-aspect-ratio",
         "body": [
@@ -75,7 +75,7 @@
         ],
         "description": "Shadcnui Image AspectRatio Snippet - Creates an image container with Shadcnui AspectRatio."
     },
-    // Avatar
+
     "Shadcnui Avatar Snippet": {
         "prefix": "sc-avatar",
         "body": [
@@ -86,13 +86,13 @@
         ],
         "description": "Shadcnui Avatar Snippet - Creates a Shadcnui Avatar with customizable image source and fallback content."
     },
-    // Badge
+
     "Shadcnui Badge Snippet": {
         "prefix": "sc-badge",
         "body": ["<Badge>${1:Badge Text}</Badge>"],
         "description": "Shadcnui Badge Snippet - Creates a Shadcnui Badge with customizable text."
     },
-    // Buttons
+
     "Shadcnui Button Snippet": {
         "prefix": "sc-button",
         "body": ["<Button>Button Text</Button>"],
@@ -113,7 +113,7 @@
         "body": ["<Button variant=\"outline\">${1:Outline}</Button>"],
         "description": "Shadcnui Outline Button Snippet - Creates a Shadcnui button with an outline variant."
     },
-    // Calendar
+
     "Shadcnui Calendar Snippet": {
         "prefix": "sc-calendar",
         "body": [
@@ -126,7 +126,7 @@
         ],
         "description": "Shadcnui Calendar Snippet - Creates a Shadcnui Calendar component with customizable properties."
     },
-    // Card
+
     "Shadcnui Card Snippet": {
         "prefix": "sc-card",
         "body": [
@@ -145,7 +145,64 @@
         ],
         "description": "Shadcnui Card Snippet - Creates a Shadcnui Card with customizable title, description, content, and footer."
     },
-    // Checkbox
+    "Shadcnui Carousel Snippet": {
+        "prefix": "sc-carousel",
+        "body": [
+            "<Carousel",
+            "  opts={{",
+            "    align: \"${1:start}\",",
+            "  }}",
+            "  className=\"${2:w-full max-w-sm}\"",
+            ">",
+            "  <CarouselContent>",
+            "    {Array.from({ length: ${3:5} }).map((_, index) => (",
+            "      <CarouselItem key={index} className=\"${4:md:basis-1/2 lg:basis-1/3}\">",
+            "        <div className=\"${5:p-1}\">",
+            "          <Card>",
+            "            <CardContent className=\"flex aspect-square items-center justify-center p-6\">",
+            "              <span className=\"${6:text-3xl font-semibold}\">${7:${index + 1}}</span>",
+            "            </CardContent>",
+            "          </Card>",
+            "        </div>",
+            "      </CarouselItem>",
+            "    ))}",
+            "  </CarouselContent>",
+            "  <CarouselPrevious />",
+            "  <CarouselNext />",
+            "</Carousel>"
+        ],
+        "description": "Shadcnui Carousel Snippet - Creates a Shadcnui Carousel with customizable options and content."
+    },
+    "Shadcnui Vertical Carousel Snippet": {
+        "prefix": "sc-carousel-vertical",
+        "body": [
+            "<Carousel",
+            "  opts={{",
+            "    align: \"${1:start}\",",
+            "  }}",
+            "  orientation=\"${2:vertical}\"",
+            "  className=\"${3:w-full max-w-xs}\"",
+            ">",
+            "  <CarouselContent className=\"${4:-mt-1 h-[200px]}\">",
+            "    {Array.from({ length: ${5:5} }).map((_, index) => (",
+            "      <CarouselItem key={index} className=\"${6:pt-1 md:basis-1/2}\">",
+            "        <div className=\"${7:p-1}\">",
+            "          <Card>",
+            "            <CardContent className=\"flex items-center justify-center p-6\">",
+            "              <span className=\"${8:text-3xl font-semibold}\">${9:${index + 1}}</span>",
+            "            </CardContent>",
+            "          </Card>",
+            "        </div>",
+            "      </CarouselItem>",
+            "    ))}",
+            "  </CarouselContent>",
+            "  <CarouselPrevious />",
+            "  <CarouselNext />",
+            "</Carousel>"
+        ],
+        "description": "Shadcnui Vertical Carousel Snippet - Creates a Shadcnui Carousel with vertical orientation and customizable options."
+    },
+
     "Shadcnui Checkbox Snippet": {
         "prefix": "sc-checkbox",
         "body": [
@@ -161,7 +218,7 @@
         ],
         "description": "Shadcnui Checkbox Snippet - Creates a Shadcnui checkbox with a customizable ID and label."
     },
-    // Collapsible
+
     "Shadcnui Collapsible Snippet": {
         "prefix": "sc-collapsible",
         "body": [
@@ -174,7 +231,55 @@
         ],
         "description": "Shadcnui Collapsible Snippet - Creates a Shadcnui Collapsible with customizable trigger and content."
     },
-    // Context Menu
+
+    "Shadcnui Popover with Command Snippet": {
+        "prefix": "sc-combobox",
+        "body": [
+            "<Popover open={${1:open}} onOpenChange={${2:setOpen}}>",
+            "  <PopoverTrigger asChild>",
+            "    <Button",
+            "      variant=\"outline\"",
+            "      role=\"combobox\"",
+            "      aria-expanded={${1:open}}",
+            "      className=\"${3:w-[200px] justify-between}\"",
+            "    >",
+            "      {${4:value",
+            "        ? frameworks.find((framework) => framework.value === value)?.label",
+            "        : \"Select framework...\"}",
+            "      <ChevronsUpDown className=\"ml-2 h-4 w-4 shrink-0 opacity-50\" />",
+            "    </Button>",
+            "  </PopoverTrigger>",
+            "  <PopoverContent className=\"w-[200px] p-0\">",
+            "    <Command>",
+            "      <CommandInput placeholder=\"${5:Search framework...}\" />",
+            "      <CommandEmpty>${6:No framework found.}</CommandEmpty>",
+            "      <CommandGroup>",
+            "        {frameworks.map((framework) => (",
+            "          <CommandItem",
+            "            key={framework.value}",
+            "            value={framework.value}",
+            "            onSelect={(currentValue) => {",
+            "              setValue(currentValue === value ? \"\" : currentValue)",
+            "              setOpen(false)",
+            "            }}",
+            "          >",
+            "            <Check",
+            "              className={cn(",
+            "                \"mr-2 h-4 w-4\",",
+            "                value === framework.value ? \"opacity-100\" : \"opacity-0\"",
+            "              )}",
+            "            />",
+            "            {framework.label}",
+            "          </CommandItem>",
+            "        ))}",
+            "      </CommandGroup>",
+            "    </Command>",
+            "  </PopoverContent>",
+            "</Popover>"
+        ],
+        "description": "Shadcnui Popover with Command Snippet - Creates a Shadcnui Popover with a Command component inside for selecting frameworks."
+    },
+
     "Shadcnui ContextMenu Snippet": {
         "prefix": "sc-context-menu",
         "body": [
@@ -215,7 +320,6 @@
         "description": "Shadcnui Command Snippet - Creates a Shadcnui Command component with customizable input, results, and groups."
     },
 
-    // Datepicker
     "Shadcnui Popover Snippet": {
         "prefix": "sc-datepicker",
         "body": [
@@ -263,13 +367,51 @@
         ],
         "description": "Shadcnui Dialog Snippet - Creates a Shadcnui Dialog with customizable trigger, title, and description."
     },
-    // Input
+    "Shadcnui Drawer Snippet": {
+        "prefix": "sc-drawer",
+        "body": [
+            "<Drawer>",
+            "  <DrawerTrigger>${1:Open}</DrawerTrigger>",
+            "  <DrawerContent>",
+            "    <DrawerHeader>",
+            "      <DrawerTitle>${2:Are you absolutely sure?}</DrawerTitle>",
+            "      <DrawerDescription>${3:This action cannot be undone.}</DrawerDescription>",
+            "    </DrawerHeader>",
+            "    <DrawerFooter>",
+            "      <Button>${4:Submit}</Button>",
+            "      <DrawerClose>",
+            "        <Button variant=\"outline\">${5:Cancel}</Button>",
+            "      </DrawerClose>",
+            "    </DrawerFooter>",
+            "  </DrawerContent>",
+            "</Drawer>"
+        ],
+        "description": "Shadcnui Drawer Snippet - Creates a Shadcnui Drawer with customizable trigger, title, description, and buttons."
+    },
+    "Shadcnui DropdownMenu Snippet": {
+        "prefix": "sc-dropdown",
+        "body": [
+            "<DropdownMenu>",
+            "  <DropdownMenuTrigger>${1:Open}</DropdownMenuTrigger>",
+            "  <DropdownMenuContent>",
+            "    <DropdownMenuLabel>${2:My Account}</DropdownMenuLabel>",
+            "    <DropdownMenuSeparator />",
+            "    <DropdownMenuItem>${3:Profile}</DropdownMenuItem>",
+            "    <DropdownMenuItem>${4:Billing}</DropdownMenuItem>",
+            "    <DropdownMenuItem>${5:Team}</DropdownMenuItem>",
+            "    <DropdownMenuItem>${6:Subscription}</DropdownMenuItem>",
+            "  </DropdownMenuContent>",
+            "</DropdownMenu>"
+        ],
+        "description": "Shadcnui DropdownMenu Snippet - Creates a Shadcnui DropdownMenu with customizable trigger and menu items."
+    },
+
     "Shadcnui Email Input Snippet": {
         "prefix": "sc-input",
         "body": ["<Input type=\"text\" placeholder=\"Text\" />"],
         "description": "Shadcnui Email Input Snippet"
     },
-    // Menubar
+
     "Shadcnui Menubar Snippet": {
         "prefix": "sc-menubar",
         "body": [
@@ -291,7 +433,7 @@
         ],
         "description": "Shadcnui Menubar Snippet - Creates a Shadcnui Menubar with customizable menu items and shortcuts."
     },
-    // Navigation Menu
+
     "Shadcnui NavigationMenu Snippet": {
         "prefix": "sc-navigation-menu",
         "body": [
@@ -308,7 +450,7 @@
         ],
         "description": "Shadcnui NavigationMenu Snippet - Creates a Shadcnui NavigationMenu with customizable menu items, triggers, and links."
     },
-    // Progress Bar
+
     "Shadcnui Progress Snippet": {
         "prefix": "sc-progress",
         "body": ["<Progress value={${1:33}} />"],
@@ -356,7 +498,7 @@
         "body": ["<Textarea placeholder=\"Type your message here.\" />"],
         "description": "Shadcn UI Textarea"
     },
-    "Shadcn Tabs": {
+    "Shadcnui Tabs": {
         "prefix": "sc-tabs",
         "body": [
             "<Tabs defaultValue=\"account\" className=\"w-[400px]\">",
