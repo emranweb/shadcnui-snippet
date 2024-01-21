@@ -29,3 +29,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 -   Add Shadcnui Table component
 -   Add Shadcnui Textarea component
 -   Add Shadcnui Switch component
+
+## [0.0.4] - 2024-1-22
+
+-   Add Shadcnui Carousel component
+-   Add Shadcnui Combobox
+-   Add Shadcnui Command
+-   Add Shadcnui Drawer
+-   Add Shadcnui Dropdown Menu
