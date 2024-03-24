@@ -37,3 +37,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 -   Add Shadcnui Command
 -   Add Shadcnui Drawer
 -   Add Shadcnui Dropdown Menu
+
+## [0.0.5] - 2024-3-24
+
+-   Add Shadcnui Form
+-   Add Shadcnui Hovercard
+-   Add Shadcnui Input OTP
+-   Add Shadcnui Input Label
+-   Add Breadcrumb
+-   Add Command
+-   Add Pagination
+-   Add Popover
